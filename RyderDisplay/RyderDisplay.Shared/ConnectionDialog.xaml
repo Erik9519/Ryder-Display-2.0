@@ -1,0 +1,19 @@
+﻿<ContentDialog
+    x:Class="RyderDisplay.ConnectionDialog"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:RyderDisplay"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="Connection Settings"
+    PrimaryButtonText="Connect"
+    PrimaryButtonClick="ConnectButtonClick">
+
+    <Grid>
+        <TextBox x:Name="ip" Margin="0,-5,0,0" TextWrapping="Wrap" Text="192.168." VerticalAlignment="Top" RenderTransformOrigin="-0.051,-0.29" HorizontalAlignment="Right" Width="199" InputScope="Url" IsTextPredictionEnabled="False"/>
+        <TextBox x:Name="port" Margin="0,32,0,0" VerticalAlignment="Top" HorizontalAlignment="Right" Width="199" Text="9519" InputScope="Number" IsTextPredictionEnabled="False"/>
+        <TextBox x:Name="pswd" Margin="0,69,0,0" TextWrapping="Wrap" Text="1234" VerticalAlignment="Top" HorizontalAlignment="Right" Width="199" InputScope="Password" IsTextPredictionEnabled="False"/>
+        <TextBlock HorizontalAlignment="Left" Margin="-1,2,0,0" TextWrapping="Wrap" Text="IP address:" VerticalAlignment="Top" RenderTransformOrigin="0.933,0.526"/>
+        <TextBlock HorizontalAlignment="Left" Margin="37,39,0,0" TextWrapping="Wrap" Text="Port:" VerticalAlignment="Top" RenderTransformOrigin="0.933,0.526"/>
+        <TextBlock HorizontalAlignment="Left" Margin="4,76,0,0" TextWrapping="Wrap" Text="Password:" VerticalAlignment="Top" RenderTransformOrigin="0.933,0.526"/>
+    </Grid>
+</ContentDialog>
